@@ -196,13 +196,7 @@ li {
 
 /* Sidebar Locations Buttons */
 
-.sidebar .sidebar-container .places {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.sidebar ul li .places-btn {
+.sidebar ul li .city {
   background-color: transparent;
   color: var(--sidebar-primary);
   border-radius: 5px;
