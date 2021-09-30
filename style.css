@@ -6,7 +6,7 @@
 
 :root {
   --sidebar-primary: #c0c0c0;
-  --background-img: url('https://images.pexels.com/photos/6526177/pexels-photo-6526177.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+  --background-img: url('main-photo.jpeg');
 }
 
 body {
@@ -92,11 +92,12 @@ li {
 
 /* Sidebar */
 
+/* Utilities */
 .sidebar .white {
   color: #fff;
 }
 
-.spacer {
+.sidebar .spacer {
   width: 100%;
   margin: 10px auto;
   height: 0.1px;
@@ -132,15 +133,17 @@ li {
   color: var(--sidebar-primary);
 }
 
+/* Sidebar Container For Width Responsiveness */
 .sidebar-container {
   display: flex;
   height: 100vh;
   flex-direction: column;
   justify-content: space-between;
   align-items: space-between;
+  min-height: 370px;
 }
 
-/* Form */
+/* Sidebar Form */
 
 .sidebar #sidebar-form {
   display: flex;
@@ -148,6 +151,7 @@ li {
   justify-content: space-between;
 }
 
+/* Sidebar Form Input */
 .sidebar #sidebar-form input {
   background: none;
   color: var(--sidebar-primary);
@@ -156,12 +160,14 @@ li {
   outline: none;
 }
 
+/* Changing Placeholder Color */
 .sidebar #sidebar-form input::placeholder {
   color: var(--sidebar-primary);
   opacity: 0.8;
   font-size: 1rem;
 }
 
+/* Form Location Icon Button  */
 .sidebar #sidebar-form button {
   border-radius: 50%;
   width: 2.2rem;
@@ -170,13 +176,15 @@ li {
   border: none;
 }
 
+/* Form Location Icon */
 .sidebar #sidebar-form .fa {
   background: transparent;
   border: none;
   color: var(--sidebar-primary);
-  /* transform: scaleX(-1); */
 }
+/* End of Sidebar Form */
 
+/* Sidebar Paragraphs */
 .sidebar ul li {
   display: flex;
   justify-content: space-between;
