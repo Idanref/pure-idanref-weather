@@ -59,7 +59,7 @@ li {
 }
 
 /* 1 */
-.left-info > h1 {
+.left-info h1 {
   font-size: 6rem;
   font-weight: 300;
 }
@@ -125,6 +125,7 @@ li {
   background-color: transparent;
   width: 40vw;
   height: 100vh;
+  max-width: 400px;
   position: absolute;
   right: 0;
   backdrop-filter: blur(10px);
@@ -140,7 +141,6 @@ li {
   flex-direction: column;
   justify-content: space-between;
   align-items: space-between;
-  min-height: 370px;
 }
 
 /* Sidebar Form */
@@ -181,8 +181,40 @@ li {
   background: transparent;
   border: none;
   color: var(--sidebar-primary);
+  transition: color 0.5s;
 }
+
+.sidebar #sidebar-form .fa:hover {
+  color: #fff;
+}
+
 /* End of Sidebar Form */
+
+.sidebar h4 {
+  padding: 10px 0;
+}
+
+/* Sidebar Locations Buttons */
+
+.sidebar .sidebar-container .places {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar ul li .places-btn {
+  background-color: transparent;
+  color: var(--sidebar-primary);
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  transition: color 0.5s;
+}
+
+.sidebar ul li button:hover {
+  color: #fff;
+}
 
 /* Sidebar Paragraphs */
 .sidebar ul li {
