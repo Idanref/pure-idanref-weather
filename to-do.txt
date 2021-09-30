@@ -1,0 +1,10 @@
+-- Phones - Max-width ~600px --
+
+1. Change background photo to horizontal photo
+2. Change left-info to column
+3. Delete cities and keep weather details
+4. Maybe add current location from api
+
+-- Tablets --
+
+1. Continue changing font sizes
