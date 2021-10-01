@@ -1,18 +1,94 @@
 /* Width Responsiveness */
 
 @media (max-width: 820px) {
+  .left-info {
+    margin-left: 1.5rem;
+    flex-direction: column;
+    height: 100vh;
+    width: 60vw;
+    /* justify-content: center; */
+    margin: auto;
+  }
+
   .left-info h1 {
     font-size: 5rem;
   }
-
-  .left-info {
-    margin-left: 1.5rem;
-  }
 }
 
-@media (max-width: 500px) {
+/* Phones */
+
+@media (max-width: 650px) {
+  body {
+    background: url('https://images.pexels.com/photos/1631678/pexels-photo-1631678.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260') no-repeat center
+      center/cover;
+  }
+  .left-info {
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    text-shadow: 1px 1px 1px #888;
+  }
+
   .left-info h1 {
-    font-size: 1rem;
+    font-size: 4rem;
+  }
+
+  .left-info .location-info {
+    padding: 20px;
+  }
+
+  .left-info .location-info h3 {
+    font-size: 2rem;
+  }
+
+  .left-info p {
+    font-size: 0.8rem;
+  }
+
+  .sidebar .cities,
+  .sidebar .spacer,
+  .sidebar .weather-details,
+  .sidebar::before {
+    display: none;
+  }
+
+  .sidebar {
+    width: 100vw;
+    max-width: 650px;
+    backdrop-filter: blur(0px);
+  }
+
+  .sidebar .status-list {
+    margin-bottom: 13px;
+    color: #fff;
+    padding: 0 15px;
+  }
+
+  .sidebar #sidebar-form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.25;
+    z-index: -1;
+  }
+
+  .sidebar #sidebar-form {
+    backdrop-filter: blur(2px);
+    padding: 10px 15px;
+  }
+
+  .sidebar #sidebar-form input,
+  .sidebar #sidebar-form input::placeholder {
+    color: #fff;
+  }
+
+  .sidebar .status-list {
+    text-shadow: 1px 1px 5px #333;
   }
 }
 

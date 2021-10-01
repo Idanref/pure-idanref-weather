@@ -6,6 +6,7 @@
 
 :root {
   --sidebar-primary: #c0c0c0;
+  --background-img: url('https://images.pexels.com/photos/1631678/pexels-photo-1631678.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
   --background-img: url('main-photo.jpeg');
 }
 
@@ -54,6 +55,7 @@ li {
   margin-bottom: 3rem;
   margin-left: 3rem;
   color: #fff;
+  text-shadow: 1px 1px 3px #999;
   justify-content: center;
   align-items: center;
 }
